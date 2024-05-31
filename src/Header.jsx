@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import{ useState } from 'react';
 import logo from './img/logo.png'
 
 const Header = () => {
   const [menu, setmenu]= useState(0);
   const menuItems=['Home','Program','About us','Campus','Testomonials','Contact us'];
+  const [bgclr,setbgclr]= useState(false);
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      window.scrollY >50 ?setbgclr(true): setbgclr(false);
+    })
+  },[]);
 
   return (
 <>
-<div className="row bg-dark position-fixed nav text-white d-flex flex-row" style={{zIndex:'4'}}>
+<div className={`row ${bgclr?'bg-dark':'bg-transparent'} position-fixed nav text-white d-flex flex-row`} style={{zIndex:'4'}}>
       <div className='col-4 d-flex align-items-center justify-content-center'>
         <img className='w-100 p-2' src={logo} alt="" /></div>
-      <div className="head bg-dark collapse col-md-8 d-md-flex align-items-md-center justify-content-md-around">
+      <div className={`head ${bgclr?'bg-dark':'bg-transparent'} collapse col-md-8 d-md-flex align-items-md-center justify-content-md-around`}>
         {
           menuItems.map((val,ind)=>{
             return(

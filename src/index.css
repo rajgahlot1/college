@@ -36,8 +36,9 @@ body{
   cursor:pointer;
 }
 .page1{
+  margin:0;
+  padding:0;
 width:100%;
-min-height:100vh;
   background: linear-gradient(rgba(8, 0, 58, 0.705),rgba(8, 0, 58, 0.697)), url('hero.png');
   z-index:1; 
 background-size:cover;
@@ -75,6 +76,7 @@ opacity:1;
 
 .img1::before {
   content: '';
+ /* margin-top:5px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -82,4 +84,12 @@ opacity:1;
   height: 100%;
   background: rgba(37, 51, 81, 0.693); /* RGBA color overlay */
   pointer-events: none; /* Allows clicks to pass through */
+}
+.playbtn{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-contaier{
+  flex:1;
 }

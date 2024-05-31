@@ -23,10 +23,10 @@ const Program = ({ title, subTitle }) => {
             {Images.map((val,ind)=>{
                 return(
                  <div className="col-sm-4 col-8 mb-2">
-                 <div className="position-relative  img1">
+                 <div className="position-relative img1 mt-sm-auto mb-sm-auto mb-3 mt-3">
                    <img 
                      src={Images2[ind]}
-                     className="img-fluid mt-sm-auto mb-sm-auto mb-3 mt-3"
+                     className="img-fluid "
                      alt=""
                      style={{ zIndex: "1" }}
                    />
