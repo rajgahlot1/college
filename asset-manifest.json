@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/college/static/css/main.0e141404.css",
+    "main.js": "/college/static/js/main.0aec88b3.js",
+    "static/media/hero.png": "/college/static/media/hero.1c44fc731e824d345d6b.png",
+    "static/media/program-3.png": "/college/static/media/program-3.73a816ab56c0a6e457d6.png",
+    "static/media/program-1.png": "/college/static/media/program-1.a77b437944c963838cea.png",
+    "static/media/program-2.png": "/college/static/media/program-2.72b615ee1f3e9b493416.png",
+    "index.html": "/college/index.html",
+    "main.0e141404.css.map": "/college/static/css/main.0e141404.css.map",
+    "main.0aec88b3.js.map": "/college/static/js/main.0aec88b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e141404.css",
+    "static/js/main.0aec88b3.js"
+  ]
+}
