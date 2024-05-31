@@ -38,7 +38,7 @@ body{
 .page1{
 width:100%;
 min-height:100vh;
-  background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('hero.png');
+  background: linear-gradient(rgba(8, 0, 58, 0.705),rgba(8, 0, 58, 0.697)), url('hero.png');
   z-index:1; 
 background-size:cover;
 background-position:center;
@@ -61,10 +61,25 @@ background-position:center;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    opacity:1;
+    opacity:0;
+    margin-top: 50px;
+    transition:all 0.5s;
     padding-bottom:20px;
+    width:100%;
 }
 .img1:hover .img2{
-  background-color: red;
-opacity:0;
+  margin-top:0;
+  cursor:pointer;
+opacity:1;
+}
+
+.img1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 51, 81, 0.693); /* RGBA color overlay */
+  pointer-events: none; /* Allows clicks to pass through */
 }
