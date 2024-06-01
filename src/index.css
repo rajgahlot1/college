@@ -45,18 +45,6 @@ background-size:cover;
 background-position:center;
  color:white;
 }
-@media (max-width:768px){
-  .head{
-    position:fixed;
-    width:150px;
-    right:0;
-    top:50px;
-    border-radius:0 0 20px 20px;
-  }
-   .nav{
-    height:50px;
-  }
-}
 .img2{
     z-index:2;
     top: 50%;
@@ -93,3 +81,26 @@ opacity:1;
 .text-contaier{
   flex:1;
 }
+.carImg{
+  max-width:200px;
+}
+.carousel-inner, .carousel-item{
+  border:1px solid rgba(10, 3, 3, 0.061);
+ box-shadow: 0 0 10px 1px black;
+  border-radius: 20px;
+}
+@media (max-width:768px){
+  .carImg{
+   width:100px;
+  }
+   .head{
+     position:fixed;
+     width:150px;
+     right:0;
+     top:50px;
+     border-radius:0 0 20px 20px;
+   }
+    .nav{
+     height:50px;
+   }
+ }
