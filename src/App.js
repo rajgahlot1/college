@@ -7,6 +7,7 @@ import Header from './Header'
 import Program from './Program'
 import About from './About.jsx'
 import Campus from './Campus.jsx'
+import Footer from './Footer.jsx';
 import Testonomials from './Testonomials.jsx'
 import Contact from './Contact.jsx';
 const App = () => {
@@ -33,6 +34,7 @@ window.scrollY >1120 ?setScrol2(true): setScrol2(false);
    <Campus/>
   <Testonomials/>
   <Contact/>
+  <Footer/>
     </>
   )
 }

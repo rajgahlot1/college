@@ -1,9 +1,11 @@
 import{ useState } from 'react';
 import logo from './img/logo.png'
+import { Link } from 'react-scroll';
 const Header = ({bgclr}) => {
   const [menu, setmenu]= useState(0);
-  const menuItems=['Home','Program','About us','Campus','Testomonials','Contact us'];
-  return (
+  const menuItems=['Home','Program','About us','Campus','Testimonials','Contact us'];
+  const pageNo= ['home','program','about','campus','testimonials','contact']
+ return (
 <>
 <div className={`row ${bgclr?'bg-dark':'bg-transparent'} position-fixed nav text-white d-flex flex-row`} style={{zIndex:'4'}}>
       <div className='col-4 d-flex align-items-center justify-content-center'>
@@ -12,7 +14,7 @@ const Header = ({bgclr}) => {
         {
           menuItems.map((val,ind)=>{
             return(
-              <div className={`p-2 ps-2 pe-2 ${ind===menu?'active':''}`} onClick={()=>setmenu(ind)}>{val}</div>
+              <div className={`p-2 ps-2 pe-2 ${ind===menu?'active':''}`}><Link onClick={()=>setmenu(ind)} to={pageNo[ind]} offset={-60} duration={500}>{val}</Link></div>
             )
           })
         }

@@ -30,7 +30,7 @@ const Contact = () => {
     }
   };
   return (<>
-    <div className="contact pb-4">
+    <div className="contact pb-4" id='contact'>
       <div>
         <h4 className="text-center mt-4">CONTACT US</h4>
         <h1 className="text-center pb-2">Get in Touch</h1>

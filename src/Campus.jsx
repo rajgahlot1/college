@@ -8,7 +8,7 @@ const Campus = () => {
   const gallary = [gallary1, gallary2, gallary3, gallary4];
   return (
     <>
-      <div>
+      <div id='campus'>
         <h3 className="text-center pb-2">GALARY</h3>
         <h1 className="text-center pb-2">Campus Photos</h1>
         <div className="row row-cols-2 row-cols-md-4 ms-2 me-2">

@@ -13,9 +13,9 @@ const Testonomials = () => {
   const places= ['Educity, USA','Knowlwdgeville, India','Studytown, India','Brainfield, USA']
   return (
     <>
-      <div className="pb-4">
+      <div className="pb-4" id='testimonials'>
         <div>
-          <h4 className="text-center mt-4">TESTONOMIALS</h4>
+          <h4 className="text-center mt-4">TESTIMONIALS</h4>
           <h1 className="text-center pb-4">What Student Says</h1>
         </div>
                <div className="d-flex align-items-center justify-content-center">

@@ -16,7 +16,7 @@ const Program = ({ title, subTitle,scrol,scrol1,scrol2}) => {
   const imgName= ['Graduation Degree','Masters Degree','Post Graduation'];
   return (
     <>
-      <div className="d-flex align-items-center justify-content-center flex-column">
+      <div className="d-flex align-items-center justify-content-center flex-column" id='program'>
         <h3 className="pt-md-5 pt-3 text-center">{subTitle}</h3>
         <p className="pt-2 text-center fs-1 fw-bold">{title}</p>
         <div style={imgStyle} className="row pb-md-5 pt-md-5 ms-md-3 me-md-3 mb-md-3 ">

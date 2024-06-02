@@ -95,6 +95,9 @@ background-position:center;
   width:30px;
 }
 @media (max-width:768px){
+  footer{
+    font-size:10px;
+  }
   .img1:hover .imga0,.imga1,.imga2{
     margin-top:0;
     cursor:pointer;
