@@ -20,7 +20,7 @@ const Header = ({bgclr}) => {
         }
      
       </div>
-      <div className="position-absolute menubtn d-block d-md-none me-5" data-bs-toggle="collapse" data-bs-target=".head" aria-expanded="false">!!!</div>
+      <div className="position-absolute menubtn d-block d-md-none fw-bold me-2" data-bs-toggle="collapse" data-bs-target=".head" aria-expanded="false">!!!</div>
     </div></>    
 )
 
