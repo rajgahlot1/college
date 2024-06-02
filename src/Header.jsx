@@ -1,17 +1,8 @@
-import React, { useEffect } from 'react';
 import{ useState } from 'react';
 import logo from './img/logo.png'
-
-const Header = () => {
+const Header = ({bgclr}) => {
   const [menu, setmenu]= useState(0);
   const menuItems=['Home','Program','About us','Campus','Testomonials','Contact us'];
-  const [bgclr,setbgclr]= useState(false);
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-      window.scrollY >50 ?setbgclr(true): setbgclr(false);
-    })
-  },[]);
-
   return (
 <>
 <div className={`row ${bgclr?'bg-dark':'bg-transparent'} position-fixed nav text-white d-flex flex-row`} style={{zIndex:'4'}}>
@@ -27,7 +18,7 @@ const Header = () => {
         }
      
       </div>
-      <div className="position-absolute menubtn d-block d-md-none" data-bs-toggle="collapse" data-bs-target=".head" aria-expanded="false">!!!</div>
+      <div className="position-absolute menubtn d-block d-md-none me-5" data-bs-toggle="collapse" data-bs-target=".head" aria-expanded="false">!!!</div>
     </div></>    
 )
 

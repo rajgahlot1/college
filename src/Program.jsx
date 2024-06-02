@@ -5,7 +5,7 @@ import program3 from "./img/program-3.png";
 import proIcon1 from "./img/program-icon-1.png";
 import proIcon2 from "./img/program-icon-2.png";
 import proIcon3 from "./img/program-icon-3.png";
-const Program = ({ title, subTitle }) => {
+const Program = ({ title, subTitle,scrol,scrol1,scrol2}) => {
   const imgStyle = {
     display: "flex",
     alignItems: "center",
@@ -21,6 +21,8 @@ const Program = ({ title, subTitle }) => {
         <p className="pt-2 text-center fs-1 fw-bold">{title}</p>
         <div style={imgStyle} className="row pb-md-5 pt-md-5 ms-md-3 me-md-3 mb-md-3 ">
             {Images.map((val,ind)=>{
+              const imgClass=
+                ind===0&& scrol?'imga1': ind===1&& scrol1? 'imga1' : ind===2&& scrol2? 'imga1': ''
                 return(
                  <div className="col-sm-4 col-8 mb-2">
                  <div className="position-relative img1 mt-sm-auto mb-sm-auto mb-3 mt-3">
@@ -30,7 +32,7 @@ const Program = ({ title, subTitle }) => {
                      alt=""
                      style={{ zIndex: "1" }}
                    />
-                   <div className="position-absolute img2 d-flex align-items-center justify-content-center flex-column">
+                   <div className={`position-absolute img2 ${imgClass} d-flex align-items-center justify-content-center flex-column`}>
                    <img
                      src={val}
                      className="w-25 img-fluid"
