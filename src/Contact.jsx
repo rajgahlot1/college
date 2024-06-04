@@ -30,11 +30,14 @@ const Contact = () => {
     }
   };
   return (<>
+  
     <div className="contact pb-4" id='contact'>
       <div>
         <h4 className="text-center mt-4">CONTACT US</h4>
         <h1 className="text-center pb-2">Get in Touch</h1>
       </div>
+      <iframe title='location' style={{width:'100% + 30px',height:'250',border:'0'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27928.122869845953!2d78.2416244622121!3d28.957268931951454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b9f058739b5d9%3A0xb0e2205cefeb943d!2sDhanaura%2C%20Uttar%20Pradesh%20244231!5e0!3m2!1sen!2sin!4v1717519325103!5m2!1sen!2sin"
+     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div className='row'>
       <div className="col-12 col-sm ms-3 ms-sm-5 me-3 ms-sm-4">
         <div className='text-bolder fs-4'>Send us a message <img className='ms-3 mb-1' style={{width:'50px'}} src={messageIcon} alt="" /></div>
